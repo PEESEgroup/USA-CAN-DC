@@ -1,0 +1,31 @@
+profile_id,country,phase,scenario,component,jedi_industry,cost_share,local_share,include_in_campus_total,electricity_flag,source_year,quality_flag,source
+jlarc_public_v1,USA,construction,all,land,fire,0.061,0,false,false,2024,source,Virginia JLARC report 598 capital composition; land excluded
+jlarc_public_v1,USA,construction,all,building_and_site,construction,0.196,1,true,false,2024,source,Virginia JLARC report 598 capital composition and 100 percent local construction
+jlarc_public_v1,USA,construction,all,computer_equipment,manufacturing,0.6152549019607843,0.25,true,false,2024,proxy,Virginia JLARC equipment local share; Nebraska 2022 computer equipment split
+jlarc_public_v1,USA,construction,all,cooling_and_electrical,electrical_equipment,0.0667450980392157,0.25,true,false,2024,proxy,Virginia JLARC equipment local share; Nebraska 2022 cooling and electrical split
+jlarc_public_v1,USA,construction,all,other_capital,professional_services,0.061,1,true,false,2024,proxy,Virginia JLARC residual capital category; professional-services proxy
+jlarc_public_v1,USA,operations,all,direct_labor,professional_services,0.15,1,true,false,2024,source,Virginia JLARC report 598 operating labor share
+jlarc_public_v1,USA,operations,all,electricity,tcpu,0.40,1,false,true,2024,source,Virginia JLARC report 598 operating electricity share; excluded from campus total
+jlarc_public_v1,USA,operations,all,maintenance_security_cleaning,misc_services,0.20,0.85,true,false,2024,proxy,Public data-center operating-cost residual allocation
+jlarc_public_v1,USA,operations,all,telecommunications_network,tcpu,0.10,0.90,true,false,2024,proxy,Public data-center operating-cost residual allocation
+jlarc_public_v1,USA,operations,all,software_and_professional,professional_services,0.08,0.85,true,false,2024,proxy,Public data-center operating-cost residual allocation
+jlarc_public_v1,USA,operations,all,supplies_and_equipment,manufacturing,0.04,0.25,true,false,2024,proxy,Public data-center operating-cost residual allocation
+jlarc_public_v1,USA,operations,all,insurance_and_admin,fire,0.02,0.85,true,false,2024,proxy,Public data-center operating-cost residual allocation
+jlarc_public_v1,USA,operations,all,water_and_utilities,tcpu,0.01,1,true,false,2024,proxy,Public data-center operating-cost residual allocation
+jlarc_public_v1,CAN,construction,all,land,fire,0.061,0,false,false,2024,proxy,Virginia JLARC capital composition used as North American proxy; land excluded
+jlarc_public_v1,CAN,construction,all,building_and_site,construction,0.196,1,true,false,2024,proxy,Virginia JLARC capital composition used as North American proxy
+jlarc_public_v1,CAN,construction,all,computer_equipment,manufacturing,0.6152549019607843,0.25,true,false,2024,proxy,Virginia JLARC and Nebraska capital composition used as North American proxy
+jlarc_public_v1,CAN,construction,all,cooling_and_electrical,electrical_equipment,0.0667450980392157,0.25,true,false,2024,proxy,Virginia JLARC and Nebraska capital composition used as North American proxy
+jlarc_public_v1,CAN,construction,all,other_capital,professional_services,0.061,1,true,false,2024,proxy,Virginia JLARC residual capital category used as North American proxy
+jlarc_public_v1,CAN,operations,all,direct_labor,professional_services,0.15,1,true,false,2024,source,Virginia JLARC operating labor share
+jlarc_public_v1,CAN,operations,all,electricity,tcpu,0.40,1,false,true,2024,proxy,Virginia JLARC electricity share; StatCan 36-10-0478-01 BS518000 electricity is not facility-specific
+jlarc_public_v1,CAN,operations,all,statcan_tcpu_inputs,tcpu,0.1486048336896804,0.90,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_misc_services_inputs,misc_services,0.10572463245133683,0.85,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_manufacturing_inputs,manufacturing,0.07074090112196692,0.25,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_fire_inputs,fire,0.06280112828192613,0.85,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_professional_inputs,professional_services,0.04490604166102827,0.85,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_electrical_inputs,electrical_equipment,0.013187772334839915,0.25,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_fabricated_metals_inputs,fabricated_metals,0.0017400110061616461,0.25,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_mining_inputs,mining,0.0008721480960242496,0.50,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_machinery_inputs,machinery,0.0007511855680953627,0.25,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs
+jlarc_public_v1,CAN,operations,all,statcan_construction_inputs,construction,0.0006713457889403111,1,true,false,2022,statcan_national_proxy,StatCan 36-10-0478-01 Canada BS518000 2022 purchaser-price non-electric intermediate inputs

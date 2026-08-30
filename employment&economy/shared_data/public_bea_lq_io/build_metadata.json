@@ -1,0 +1,65 @@
+{
+  "economic_method": "public_bea_lq_io",
+  "economic_method_version": "dc_calibrated_v2",
+  "currency": "USD",
+  "price_year": 2024,
+  "manifest_snapshot_date": "2026-08-14",
+  "bea_api_key_used": false,
+  "detailed_industries": 402,
+  "sources": {
+    "bea_supply_2017": {
+      "url": "https://apps.bea.gov/industry/xls/io-annual/Supply_2017_DET.xlsx",
+      "sha256": "7a3a403f7a7e8335e61776c1da6c423409d54090acaee597bbae738fa9a6703e",
+      "source_data_year": 2017,
+      "source_price_year": 2017
+    },
+    "bea_use_2017": {
+      "url": "https://apps.bea.gov/industry/xls/io-annual/Use_SUT_Framework_2017_DET.xlsx",
+      "sha256": "07aa2a21151e78ec1462c8f48142d274c153d90aff07bd797e07c6bc8486911e",
+      "source_data_year": 2017,
+      "source_price_year": 2017
+    },
+    "bea_pce_bridge_2017": {
+      "url": "https://apps.bea.gov/industry/xls/io-annual/PCEBridge_2017_DET.xlsx",
+      "sha256": "02ce9c71d42b11650cbb41ce70bd4c148d081f9113ad90244f2ff58f2272e010",
+      "source_data_year": 2017,
+      "source_price_year": 2017
+    },
+    "bea_state_income_2024": {
+      "url": "https://apps.bea.gov/regional/zip/SAINC.zip",
+      "sha256": "339a3d3d6a283eea3f5647ea5b33570da73801d4248c5e2209c1e196428d9a9a",
+      "source_data_year": 2024,
+      "source_price_year": 2024
+    },
+    "bea_state_pce_2024": {
+      "url": "https://apps.bea.gov/regional/zip/SAPCE.zip",
+      "sha256": "d93e91e178bf35c1448fd2692deb4b08c6e3953d83a2c430595787822515a9b1",
+      "source_data_year": 2024,
+      "source_price_year": 2024
+    },
+    "qcew_2024": {
+      "url": "https://data.bls.gov/cew/data/files/2024/csv/2024_annual_singlefile.zip",
+      "sha256": "334ac1ec9101f516ed9698859a165666c6f6d08a51b35cb5fc1e1bf62e06b0da",
+      "source_data_year": 2024,
+      "source_price_year": 2024
+    },
+    "aces_2017_table7a": {
+      "url": "https://www2.census.gov/programs-surveys/aces/tables/2017/table7a.xlsx",
+      "sha256": "bbde75df708a4744d1229a66b9f974a7cbc0078d3debe146298ed75009c28808",
+      "source_data_year": 2017,
+      "source_price_year": 2017
+    },
+    "aces_2017_table8a": {
+      "url": "https://www2.census.gov/programs-surveys/aces/tables/2017/table8a.xlsx",
+      "sha256": "f5063830c1627fdb4bbddc0e7e4e9e078750ba072598aa8442fc9ab83d066bde",
+      "source_data_year": 2017,
+      "source_price_year": 2017
+    },
+    "faf5_2017_state": {
+      "url": "https://faf.ornl.gov/faf5/data/download_files/FAF5.7.1_State.zip",
+      "sha256": "1959b40d1b297b7dec827035dd74c0bda429a70fc5510d688f72d4e1620950b6",
+      "source_data_year": 2017,
+      "source_price_year": 2017
+    }
+  }
+}

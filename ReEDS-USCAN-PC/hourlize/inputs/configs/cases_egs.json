@@ -1,0 +1,12 @@
+{
+    "egs_reference_ba": {
+        "tech": "egs", 
+        "access_case": "reference",
+        "reg_out_col": "ba"
+    },
+    "egs_reference_county": {
+        "tech": "egs", 
+        "access_case": "reference",
+        "reg_out_col": "FIPS"
+    }
+}

@@ -1,0 +1,156 @@
+ba,st,state,load_factor
+p1,WA,washington,0.511516559
+p2,WA,washington,0.263243829
+p3,WA,washington,0.134421152
+p4,WA,washington,0.09081199
+p5,OR,oregon,0.85928742
+p6,OR,oregon,0.119340221
+p7,OR,oregon,0.01985459
+p8,CA,california,0.003279519
+p9,CA,california,0.325110728
+p10,CA,california,0.591902782
+p11,CA,california,0.07977513
+p12,NV,nevada,0.252781042
+p13,NV,nevada,0.747222879
+p14,ID,idaho,0.123759703
+p15,ID,idaho,0.565045718
+p16,ID,idaho,0.314160855
+p17,MT,montana,0.332191138
+p18,MT,montana,0.253265559
+p19,MT,montana,0.005898671
+p20,MT,montana,0.255855551
+p21,WY,wyoming,0.463440289
+p22,WY,wyoming,0.007444217
+p23,WY,wyoming,0.133803291
+p24,WY,wyoming,0.395309919
+p25,UT,utah,0.95302444
+p26,UT,utah,0.04696329
+p27,AZ,arizona,0.04067285
+p28,AZ,arizona,0.907047008
+p29,AZ,arizona,0.011311167
+p30,AZ,arizona,0.040679269
+p31,NM,new mexico,0.570266402
+p32,SD,south dakota,0.149205928
+p33,CO,colorado,0.730908527
+p34,CO,colorado,0.26909568
+p35,MT,montana,0.152791184
+p36,ND,north dakota,0.694835936
+p37,ND,north dakota,0.319350872
+p38,SD,south dakota,0.855908288
+p39,NE,nebraska,0.086970711
+p40,NE,nebraska,0.421602092
+p41,NE,nebraska,0.491426084
+p42,MN,minnesota,0.056327372
+p43,MN,minnesota,0.84770859
+p44,MN,minnesota,0.027001584
+p45,IA,iowa,0.284913362
+p46,WI,wisconsin,0.145087209
+p47,NM,new mexico,0.426137569
+p48,TX,texas,0.049330016
+p49,OK,oklahoma,0.00693831
+p50,OK,oklahoma,0.642755893
+p51,OK,oklahoma,0.350304268
+p52,KS,kansas,0.062621005
+p53,KS,kansas,0.934782412
+p54,MO,missouri,0.407187533
+p55,MO,missouri,0.242901191
+p56,AR,arkansas,0.264927786
+p57,TX,texas,0.01957121
+p58,LA,louisiana,0.951771163
+p59,TX,texas,0.018534799
+p60,TX,texas,0.016916347
+p61,TX,texas,0.020517665
+p62,TX,texas,0.029899249
+p63,TX,texas,0.353236373
+p64,TX,texas,0.095047239
+p65,TX,texas,0.132709888
+p66,TX,texas,0.077928494
+p67,TX,texas,0.186557266
+p68,MN,minnesota,0.064635713
+p69,IA,iowa,0.083499592
+p70,IA,iowa,0.631390977
+p71,MO,missouri,0.019268849
+p72,MO,missouri,0.182719663
+p73,MO,missouri,0.036931893
+p74,MI,michigan,0.026426448
+p75,WI,wisconsin,0.15434381
+p76,WI,wisconsin,0.193286474
+p77,WI,wisconsin,0.053520599
+p78,WI,wisconsin,0.122472396
+p79,WI,wisconsin,0.330529128
+p80,IL,illinois,0.847532767
+p81,IL,illinois,0.097155297
+p82,IL,illinois,0.033015066
+p83,IL,illinois,0.022244107
+p84,MO,missouri,0.112245181
+p85,AR,arkansas,0.735068571
+p86,LA,louisiana,0.048955417
+p87,MS,mississippi,0.72087746
+p88,MS,mississippi,0.277865039
+p89,AL,alabama,0.515098227
+p90,AL,alabama,0.485756079
+p91,FL,florida,0.036259644
+p92,TN,tennessee,0.999999401
+p93,KY,kentucky,0.183464066
+p94,GA,georgia,0.999481072
+p95,SC,south carolina,0.36860508
+p96,SC,south carolina,0.631468826
+p97,NC,north carolina,0.487232887
+p98,NC,north carolina,0.512766271
+p99,VA,virginia,0.859457997
+p100,VA,virginia,0.020701271
+p101,FL,florida,0.623201541
+p102,FL,florida,0.340540912
+p103,MI,michigan,0.909364404
+p104,MI,michigan,0.064197093
+p105,IN,indiana,0.499239566
+p106,IN,indiana,0.162894213
+p107,IN,indiana,0.338313975
+p108,KY,kentucky,0.136246039
+p109,KY,kentucky,0.632401199
+p110,KY,kentucky,0.047882734
+p111,OH,ohio,0.366801816
+p112,OH,ohio,0.396120062
+p113,OH,ohio,0.085452301
+p114,OH,ohio,0.156323407
+p115,PA,pennsylvania,0.267566035
+p116,WV,west virginia,0.685457418
+p117,WV,west virginia,0.291485099
+p118,VA,virginia,0.114194805
+p119,PA,pennsylvania,0.026215723
+p120,PA,pennsylvania,0.016716656
+p121,MD,maryland,0.101248452
+p122,PA,pennsylvania,0.690130405
+p123,MD,maryland,0.898751244
+p124,VA,virginia,0.005646593
+p125,DE,delaware,0.999996871
+p126,NJ,new jersey,1.017471625
+p127,NY,new york,0.843056155
+p128,NY,new york,0.146681469
+p129,VT,vermont,0.993889239
+p130,NH,new hampshire,0.989202943
+p131,MA,massachusetts,1.003003671
+p132,CT,connecticut,0.999998986
+p133,RI,rhode island,1.000003488
+p134,ME,maine,1.000002339
+p123,DC,district of columbia,1
+p137,BC,british columbia,0.347892103
+p138,BC,british columbia,0.462450181
+p139,BC,british columbia,0.189657716
+p140,AB,alberta,0.502650044
+p141,AB,alberta,0.497349956
+p142,SK,saskatchewan,1
+p143,MB,manitoba,1
+p144,ON,ontario,0.00625797
+p145,ON,ontario,0.037427955
+p146,ON,ontario,0.761176699
+p147,ON,ontario,0.195137376
+p148,QC,quebec,0.435738541
+p149,QC,quebec,0.269084328
+p150,QC,quebec,0.237711414
+p151,QC,quebec,0.057465717
+p152,NB,new brunswick,1
+p153,NS,nova scotia,1
+p154,NL,newfoundland and labrador,0.050298559
+p155,NL,newfoundland and labrador,0.949701441
+p156,PEI,prince edward Island,1

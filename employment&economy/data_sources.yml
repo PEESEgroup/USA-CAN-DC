@@ -1,0 +1,151 @@
+schema_version: 1
+snapshot_date: 2026-08-14
+raw_directory: employment/data/raw
+normalized_directory: employment/shared_data/public_bea_lq_io
+sources:
+  bea_supply_2017:
+    agency: US Bureau of Economic Analysis
+    url: https://apps.bea.gov/industry/xls/io-annual/Supply_2017_DET.xlsx
+    filename: bea_supply_2017.xlsx
+    source_data_year: 2017
+    source_price_year: 2017
+    release: 2023 comprehensive update, downloaded 2026-08-14
+    sha256: 7a3a403f7a7e8335e61776c1da6c423409d54090acaee597bbae738fa9a6703e
+    target_tables: [bea_domestic_requirements_2017, us_purchaser_margins_2017]
+  bea_use_2017:
+    agency: US Bureau of Economic Analysis
+    url: https://apps.bea.gov/industry/xls/io-annual/Use_SUT_Framework_2017_DET.xlsx
+    filename: bea_use_2017.xlsx
+    source_data_year: 2017
+    source_price_year: 2017
+    release: 2023 comprehensive update, downloaded 2026-08-14
+    sha256: 07aa2a21151e78ec1462c8f48142d274c153d90aff07bd797e07c6bc8486911e
+    target_tables: [bea_domestic_requirements_2017, us_datacenter_operating_inputs]
+  bea_pce_bridge_2017:
+    agency: US Bureau of Economic Analysis
+    url: https://apps.bea.gov/industry/xls/io-annual/PCEBridge_2017_DET.xlsx
+    filename: bea_pce_bridge_2017.xlsx
+    source_data_year: 2017
+    source_price_year: 2017
+    release: 2023 comprehensive update, downloaded 2026-08-14
+    sha256: 02ce9c71d42b11650cbb41ce70bd4c148d081f9113ad90244f2ff58f2272e010
+    target_tables: [us_state_pce_producer_shares_2024]
+  bea_state_income_2024:
+    agency: US Bureau of Economic Analysis
+    url: https://apps.bea.gov/regional/zip/SAINC.zip
+    filename: bea_sainc.zip
+    source_data_year: 2024
+    source_price_year: 2024
+    release: fixed bulk snapshot downloaded 2026-08-14
+    sha256: 339a3d3d6a283eea3f5647ea5b33570da73801d4248c5e2209c1e196428d9a9a
+    target_tables: [us_regional_coefficients_2024, us_state_pce_producer_shares_2024]
+  bea_state_pce_2024:
+    agency: US Bureau of Economic Analysis
+    url: https://apps.bea.gov/regional/zip/SAPCE.zip
+    filename: bea_sapce.zip
+    source_data_year: 2024
+    source_price_year: 2024
+    release: fixed bulk snapshot downloaded 2026-08-14
+    sha256: d93e91e178bf35c1448fd2692deb4b08c6e3953d83a2c430595787822515a9b1
+    target_tables: [us_state_pce_producer_shares_2024]
+  qcew_2024:
+    agency: US Bureau of Labor Statistics
+    url: https://data.bls.gov/cew/data/files/2024/csv/2024_annual_singlefile.zip
+    filename: qcew_2024.zip
+    source_data_year: 2024
+    source_price_year: 2024
+    release: 2024 annual singlefile, downloaded 2026-08-14
+    sha256: 334ac1ec9101f516ed9698859a165666c6f6d08a51b35cb5fc1e1bf62e06b0da
+    target_tables: [us_regional_coefficients_2024]
+  aces_2022_table4a:
+    agency: US Census Bureau
+    url: https://www2.census.gov/programs-surveys/aces/tables/2022/table4a.xlsx
+    filename: aces_2022_table4a.xlsx
+    source_data_year: 2022
+    source_price_year: 2022
+    release: 2022 ACES summary tables
+    sha256: 35364fe8684bc47a78178801b9601be5a3f2ec7d8d8daf0b78a9e563cb4cbecc
+    role: historical_validation_only
+    target_tables: []
+  aces_2017_table7a:
+    agency: US Census Bureau
+    url: https://www2.census.gov/programs-surveys/aces/tables/2017/table7a.xlsx
+    filename: aces_2017_table7a.xlsx
+    source_data_year: 2017
+    source_price_year: 2017
+    release: 2017 ACES summary tables
+    sha256: bbde75df708a4744d1229a66b9f974a7cbc0078d3debe146298ed75009c28808
+    target_tables: [us_aces_asset_profile]
+  aces_2017_table8a:
+    agency: US Census Bureau
+    url: https://www2.census.gov/programs-surveys/aces/tables/2017/table8a.xlsx
+    filename: aces_2017_table8a.xlsx
+    source_data_year: 2017
+    source_price_year: 2017
+    release: 2017 ACES summary tables
+    sha256: f5063830c1627fdb4bbddc0e7e4e9e078750ba072598aa8442fc9ab83d066bde
+    target_tables: [us_aces_asset_profile]
+  faf5_2017_state:
+    agency: FHWA and Bureau of Transportation Statistics
+    url: https://faf.ornl.gov/faf5/data/download_files/FAF5.7.1_State.zip
+    filename: FAF5.7.1_State.zip
+    source_data_year: 2017
+    source_price_year: 2017
+    release: FAF5.7.1 state database, downloaded 2026-08-14
+    sha256: 1959b40d1b297b7dec827035dd74c0bda429a70fc5510d688f72d4e1620950b6
+    target_tables: [us_regional_coefficients_2024]
+  statcan_34100035:
+    agency: Statistics Canada
+    url: https://www150.statcan.gc.ca/n1/en/tbl/csv/34100035-eng.zip
+    filename: 34100035-eng.zip
+    source_data_year: 2022
+    source_price_year: 2022
+    release: fixed full-table snapshot downloaded 2026-08-14
+    sha256: a65541e3a9ad9026f90e9ff302157babff7e5845bb0c4c1d026d8e94c7b72120
+    role: historical_validation_only
+    target_tables: []
+  statcan_34100039:
+    agency: Statistics Canada
+    url: https://www150.statcan.gc.ca/n1/en/tbl/csv/34100039-eng.zip
+    filename: 34100039-eng.zip
+    source_data_year: 2022
+    source_price_year: 2022
+    release: fixed full-table snapshot downloaded 2026-08-14
+    sha256: 10b66bccb96b9a38150120a99a4d2d97d22543a4bb468cc2248772b39f78d6c0
+    target_tables: [canada_regional_spend_profiles]
+  statcan_36100478:
+    agency: Statistics Canada
+    url: https://www150.statcan.gc.ca/n1/en/tbl/csv/36100478-eng.zip
+    filename: 36100478-eng.zip
+    source_data_year: 2022
+    source_price_year: 2022
+    release: fixed full-table snapshot downloaded 2026-08-14
+    sha256: fae078bf250b7b20d37bf6158b04433b4016a486f818b1cf60d827681f7123a1
+    target_tables: [canada_regional_spend_profiles, canada_product_margin_factors]
+  statcan_36100595:
+    agency: Statistics Canada
+    url: https://www150.statcan.gc.ca/n1/en/tbl/csv/36100595-eng.zip
+    filename: 36100595-eng.zip
+    source_data_year: 2022
+    source_price_year: 2022
+    release: fixed full-table snapshot downloaded 2026-08-14
+    sha256: 06d3e0e89867f9afe979e98558e1e38d0bf05533f280a08b1469b3a09374ee96
+    target_tables: [jedi_province_io_multipliers_can]
+  statcan_36100709:
+    agency: Statistics Canada
+    url: https://www150.statcan.gc.ca/n1/en/tbl/csv/36100709-eng.zip
+    filename: 36100709-eng.zip
+    source_data_year: 2022
+    source_price_year: 2022
+    release: fixed full-table snapshot downloaded 2026-08-14
+    sha256: 696c1a2f95cfa92b9fdd6d8b62c4f376bbb52c6b2446abeb56e5ea89cd719300
+    target_tables: [canada_product_local_shares]
+  statcan_36100226:
+    agency: Statistics Canada
+    url: https://www150.statcan.gc.ca/n1/en/tbl/csv/36100226-eng.zip
+    filename: 36100226-eng.zip
+    source_data_year: 2022
+    source_price_year: 2022
+    release: fixed full-table snapshot downloaded 2026-08-14
+    sha256: bba1b1b26e5ac834dfcd0eaf67019da4a0f1744d80bf80ee6a40aa729ad04f22
+    target_tables: [canada_payroll_parameters]

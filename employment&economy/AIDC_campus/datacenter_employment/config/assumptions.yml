@@ -1,0 +1,181 @@
+# Assumption register for the data-center campus employment pipeline.
+#
+# Every parameter below is the audit-trail artifact this estimate stands or falls on -- per
+# AIDC_campus/Employment-deep-research-report.md's own instruction, every derived figure must be
+# traceable to a stated formula and stated assumption values. Do not edit values here without
+# updating the citation string.
+#
+# low/base/high triplets are run together as a `scenario` column in every output file (see
+# campus_employment.py); single `value` entries are not swept.
+
+direct_construction_job_years_per_mw_it:
+  low: 0.962
+  base: 1.374
+  high: 1.786
+  unit: "lifecycle direct construction job-years per MW of new IT nameplate capacity"
+  citation: >
+    SI-USA-CAN-DC.tex, Direct construction and operating employment. Derived from
+    0.70/1.00/1.30 peak workers per facility MW, a 0.60 average-to-peak workforce ratio,
+    a two-year construction period, and PUE=1.145. These values are already converted to the
+    modeled MW-IT basis and are lifecycle totals; construction duration must not be multiplied
+    into them again.
+
+peak_construction_workers_per_mw_facility:
+  low: 0.70
+  base: 1.00
+  high: 1.30
+  unit: "peak construction workers per MW of total facility utility capacity"
+  citation: "Ryu and Hiatt (2025) hyperscale calibration; SI-USA-CAN-DC.tex"
+
+average_to_peak_construction_workforce_ratio:
+  value: 0.60
+  unit: "average annual construction workforce as a share of peak workforce"
+  citation: "SI-USA-CAN-DC.tex, Direct construction and operating employment"
+
+employment_pue_conversion:
+  value: 1.145
+  unit: "facility utility MW per modeled MW-IT"
+  citation: "2024 US average PUE reported in SI-USA-CAN-DC.tex"
+
+construction_duration_years:
+  value: 2.0
+  unit: "years per data-center construction project"
+  citation: >
+    SI-USA-CAN-DC.tex. The duration controls only the allocation of lifecycle construction
+    job-years to the two calendar years preceding commissioning.
+
+dollar_per_mw_construction:
+  low: null
+  base: null
+  high: null
+  unit: "USD per MW of new IT nameplate capacity"
+  status: "PLACEHOLDER - NOT SOURCED. Demoted to sensitivity/--construction-method capex only; no longer blocks the default run."
+  citation: >
+    None of the three archived official audits (Minnesota LBO, Virginia JLARC, Georgia DOAA --
+    see AIDC_campus/sources/) give a $/MW capital-intensity figure matched to a known MW
+    quantity. This matches the DC report's own caution that CAPEX fallback is the tertiary,
+    sensitivity-appendix-only specification (the lifecycle intensity above is now the
+    default --construction-method). Value may still be supplied by the user (see
+    --dollar-per-mw-construction CLI flag, used only when --construction-method capex is
+    selected); construction outputs computed via that method are left as NaN with
+    data_quality_flag=true until this is set.
+
+eta_constr:
+  low: 3.0
+  base: 3.9
+  high: 5.0
+  unit: "direct construction job-years per $1M local construction output"
+  citation: >
+    AIDC_campus/Employment-deep-research-report.md, sec 'Open assumptions'; verified against
+    AIDC_campus/sources/txt/minnesota_lbo_datacenter_eval.txt:996-1039
+    ($346.8M construction output -> 2,292 direct jobs in 2013 -> 3.93 jobs/$M).
+
+direct_jobs_per_mw_operating:
+  low: 0.206
+  base: 0.275
+  high: 0.344
+  unit: "direct operating FTE per MW of installed/operating IT capacity"
+  citation: >
+    SI-USA-CAN-DC.tex, Direct construction and operating employment. The underlying facility-MW
+    operating intensities are converted once to modeled MW-IT using PUE=1.145. Values are already
+    on the MW-IT basis and must not receive another PUE adjustment at runtime.
+
+dc_capex_share_land:
+  value: 0.06
+  unit: "share of gross hyperscale data-center campus CAPEX"
+  citation: >
+    Ferreira et al. (2026), Economic, Fiscal and Energy-related Impacts of Data
+    Centers in the Great Lakes Region; JLARC (2024). Bookkeeping only and excluded
+    from the baseline production/employment shock.
+
+dc_capex_share_construction:
+  value: 0.20
+  unit: "share of gross hyperscale data-center campus CAPEX"
+  citation: >
+    Ferreira et al. (2026), Weldon Cooper Center; JLARC (2024). This data-center-
+    specific share sets gross CAPEX relative to capacity-anchored local construction
+    final demand.
+
+dc_capex_share_equipment:
+  value: 0.68
+  unit: "share of gross hyperscale data-center campus CAPEX"
+  citation: >
+    Ferreira et al. (2026), Weldon Cooper Center; JLARC (2024). ACES and Statistics
+    Canada asset tables determine composition only, not this aggregate scale.
+
+dc_capex_share_other:
+  value: 0.06
+  unit: "share of gross hyperscale data-center campus CAPEX"
+  citation: >
+    Ferreira et al. (2026), Weldon Cooper Center; JLARC (2024). Bookkeeping only and
+    excluded from the baseline production/employment shock because no defensible
+    producer allocation is available.
+
+dc_equipment_to_construction_ratio:
+  value: 3.40
+  unit: "gross equipment expenditure per dollar of local construction final demand"
+  citation: "Derived once as 0.68 / 0.20 from the Weldon-Cooper-aligned CAPEX shares."
+
+dc_equipment_indirect_local_share:
+  value: 0.0
+  unit: "share of gross equipment CAPEX (68% of gross campus CAPEX; 3.4x the local construction final demand) treated as generating local indirect/induced supply-chain impacts"
+  citation: >
+    Reverse-calibrated against JLARC (2024, Virginia, Appendix D) and Ferreira et al.
+    (2026, Great Lakes region, Tables 4.2/A.1-A.24) disclosed construction-phase
+    total/direct job multipliers (1.68-1.90 across VA/OH/IL/region-aggregate). Routing
+    the full equipment purchase through the standard per-industry FAF-based regional
+    Leontief system (as construction's own supply chain is routed) overstates these
+    disclosed multipliers by 2.4-6.3x; a flat 25% local-retention rate (echoing JLARC's
+    stated "25 percent of equipment" treatment) still overstates them by 1.4-1.9x, because
+    the 25%-local portion is then re-regionalized a second time through its own upstream
+    supply chain inside the Leontief inverse. Setting this share to 0.0 -- i.e., treating
+    data-center IT/electronics hardware procurement (semiconductors, servers, networking
+    equipment) as sourced entirely from outside the state, consistent with its globalized,
+    capital-intensive supply chain -- reproduces the disclosed multipliers within 8% for
+    all three states (1.55/1.68 VA, 1.80/1.85-1.88 OH, 1.81/1.86-1.87 IL, model/disclosed).
+    Equipment CAPEX itself (gross_equipment_capex_usd) is still fully tracked for
+    reporting; only its contribution to indirect/induced construction employment is
+    zeroed. Construction's own local final demand (100% local, matching JLARC's "100
+    percent of building and site improvements") is unaffected by this parameter. See
+    datacenter_employment/equipment_local_share_calibration.py for the reproducible
+    sensitivity check across equipment_indirect_local_share in {default FAF-LPS, 0.25, 0.0}.
+
+dc_operating_employee_comp_share:
+  value: 0.15
+  unit: "direct employee compensation share of direct data-center operating output"
+  citation: >
+    Ferreira et al. (2026), Weldon Cooper Center, customized data-center operating
+    structure; JLARC (2024).
+
+dc_operating_electricity_share:
+  value: 0.40
+  unit: "electricity share of direct data-center operating output"
+  citation: >
+    Ferreira et al. (2026), Weldon Cooper Center, customized data-center operating
+    structure; JLARC (2024). Retained as accounting but excluded from the campus
+    supplier shock.
+
+dc_operating_value_added_share:
+  value: 0.3678966789667897
+  unit: "direct value added per dollar of direct data-center operating output"
+  citation: >
+    Ferreira et al. (2026), Weldon Cooper Center Table 4.3 direct operational results:
+    997 million USD value added / 2,710 million USD output.
+
+direct_payroll_spendable_share:
+  low: 0.726711915768642
+  base: 0.726711915768642
+  high: 0.726711915768642
+  unit: "employee wage share of total employer payroll cost"
+  citation: >
+    JEDI natural-gas model DefaultData Payroll Parameters: employee wage/hour 23.7998577255
+    divided by total employer payroll cost 32.7500584607. Used only for the USA first-round
+    Validation-only legacy proxy. Production household demand uses region-specific
+    WS * (DPI / PI) * (PCE / DPI) and never reads this parameter.
+
+beta_local:
+  low: 0.20
+  base: 0.30
+  high: 0.40
+  unit: "local construction-spend share (capex method only)"
+  citation: "AIDC_campus/Employment-deep-research-report.md, 'Open assumptions and sensitivity ranges' table"

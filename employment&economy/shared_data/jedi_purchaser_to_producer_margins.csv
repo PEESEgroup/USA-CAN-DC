@@ -1,0 +1,59 @@
+country,purchaser_industry,producer_industry,margin_share,source_year,quality_flag,source
+USA,agriculture,agriculture,0.583669,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,agriculture,agriculture,0.583669,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,agriculture,tcpu,0.051572,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,agriculture,tcpu,0.051572,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,agriculture,wholesale_trade,0.07245,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,agriculture,wholesale_trade,0.07245,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,agriculture,retail_trade,0.292309,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,agriculture,retail_trade,0.292309,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,mining,mining,0.362051,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,mining,mining,0.362051,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,mining,tcpu,0.630549,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,mining,tcpu,0.630549,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,mining,wholesale_trade,0.0074,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,mining,wholesale_trade,0.0074,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,construction,construction,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,construction,construction,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,manufacturing,manufacturing,0.558412,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,manufacturing,manufacturing,0.558412,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,manufacturing,tcpu,0.023014,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,manufacturing,tcpu,0.023014,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,manufacturing,wholesale_trade,0.418573,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,manufacturing,wholesale_trade,0.418573,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,fabricated_metals,fabricated_metals,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,fabricated_metals,fabricated_metals,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,machinery,machinery,0.631251,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,machinery,machinery,0.631251,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,machinery,tcpu,0.000889,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,machinery,tcpu,0.000889,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,machinery,wholesale_trade,0.367859,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,machinery,wholesale_trade,0.367859,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,electrical_equipment,electrical_equipment,0.512774,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,electrical_equipment,electrical_equipment,0.512774,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,electrical_equipment,tcpu,0.012136,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,electrical_equipment,tcpu,0.012136,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,electrical_equipment,wholesale_trade,0.47509,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,electrical_equipment,wholesale_trade,0.47509,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,tcpu,tcpu,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,tcpu,tcpu,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,wholesale_trade,wholesale_trade,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,wholesale_trade,wholesale_trade,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,retail_trade,wholesale_trade,0.688714,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,retail_trade,wholesale_trade,0.688714,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,retail_trade,retail_trade,0.311286,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,retail_trade,retail_trade,0.311286,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,fire,fire,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,fire,fire,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,misc_services,tcpu,0.042428,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,misc_services,tcpu,0.042428,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,misc_services,wholesale_trade,0.092083,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,misc_services,wholesale_trade,0.092083,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,misc_services,retail_trade,0.361097,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,misc_services,retail_trade,0.361097,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,misc_services,misc_services,0.504392,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,misc_services,misc_services,0.504392,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,professional_services,professional_services,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,professional_services,professional_services,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada
+USA,government,government,1.0,2014,source,JEDI jedi-ngas-model.xlsm DefaultData margin matrix
+CAN,government,government,1.0,2014,us_proxy,JEDI jedi-ngas-model.xlsm DefaultData margin matrix; US proxy for Canada

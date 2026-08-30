@@ -1,0 +1,50 @@
+target_currency: USD
+target_price_year: 2024
+jedi_usd_factors_to_target:
+  standard_2014:
+    multiplier_data_year: 2014
+    deflator_source: "JEDI Deflators sheet; U.S. Budget Table 10.1"
+    factors:
+      2010: 1.4374715019351982
+      2014: 1.3229214359062034
+      2022: 1.0711889999239161
+      2024: 1.0
+  pv_2019:
+    multiplier_data_year: 2019
+    deflator_source: "JEDI PV Deflators sheet; multiplier vintage 2019"
+    factors:
+      2019: 1.2257927664142971
+      2022: 1.0711889999239161
+      2024: 1.0
+  onwind_2016:
+    multiplier_data_year: 2016
+    deflator_source: "JEDI land-based wind Deflators sheet; multiplier vintage 2016"
+    factors:
+      2016: 1.3046395228572774
+      2022: 1.0711889999239161
+      2024: 1.0
+
+# AIDC spend-I/O values are assembled on a common 2022 USD calculation basis before the final
+# 2022->2024 price adjustment. Multiplier vintages are recorded separately.
+USA:
+  source_currency: USD
+  source_price_year: 2022
+  fx_source_currency_per_usd: 1.0
+  multiplier_data_year: 2014
+  price_adjustment_factor: 1.0711889999239161
+  deflator_source: "ReEDS inputs/financials/deflator.csv; 2022 USD to 2024 USD"
+
+# Canada multiplier fills use 2022 StatCan data. build_canada_statcan_fill.py already multiplies
+# jobs-per-CAD-million by 1.30 CAD/USD, so the derived earnings/output per job first reaches a
+# 2022 USD project-spending basis. The final price adjustment is then applied without another FX.
+CAN:
+  source_currency: USD
+  multiplier_source_currency: CAD
+  output_currency_after_embedded_fx: USD
+  source_price_year: 2022
+  fx_source_currency_per_usd: 1.30
+  fx_already_embedded: true
+  multiplier_data_year: 2022
+  price_adjustment_factor: 1.0711889999239161
+  deflator_source: "ReEDS inputs/financials/deflator.csv; 2022 USD to 2024 USD"
+  source: "Statistics Canada 2022 multiplier tables; Bank of Canada 2022 CAD/USD annual-average convention used by the workbook build"
